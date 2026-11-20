@@ -1,6 +1,6 @@
 # Student Dropout Risk Analysis
 
-Data analysis project for the **Foundations of Computer Science** course (2026), written in Python with pandas and NumPy.
+Final project for the **Foundations of Computer Science** course (2026), written in Python with pandas and NumPy.
 
 The project studies a dataset of **100,000 university students** (34 columns: demographic, economic, academic and behavioural data). The goal is to understand which factors are linked to **dropout** (`dropout = 1`) and to build a simple risk score.
 
@@ -38,22 +38,23 @@ Everything is in one notebook: [`foundations_cs_project.ipynb`](foundations_cs_p
 
 ## How to run
 
-1. Install the requirements:
-   ```bash
-   pip install pandas numpy jupyter
-   ```
+The project was developed with **Anaconda** and **Jupyter Notebook**. Anaconda already includes Python, pandas, NumPy and Jupyter, so there is nothing else to install.
+
+1. Install [Anaconda](https://www.anaconda.com/download) if you do not have it.
 2. Download the dataset `student_dropout_risk_2026.csv.gz` from the course website and put it in the same folder as the notebook (no need to unzip it, pandas reads `.gz` files). The data file is **not** included in this repository.
-3. If your file has a different name or location, change the path in the first `pd.read_csv(...)` cell.
-4. Start Jupyter and run all cells:
+3. Open **Anaconda Navigator** and launch **Jupyter Notebook**. Alternatively, open the **Anaconda Prompt**, go to the project folder and run:
    ```bash
-   jupyter notebook foundations_cs_project.ipynb
+   jupyter notebook
    ```
+4. Open `foundations_cs_project.ipynb` and run everything with **Kernel -> Restart & Run All**.
+
+If your data file has a different name or location, change the path in the first `pd.read_csv(...)` cell.
 
 Task 8 downloads the GDP file from [Our World in Data](https://ourworldindata.org/grapher/gdp-per-capita-worldbank.csv?v=1&csvType=full&useColumnShortNames=true), so it needs an internet connection. The request sends a browser-like `User-Agent`, because the site refuses pandas' default one.
 
 ## Tech
 
-Python 3, pandas, NumPy, Jupyter Notebook.
+Python 3 (Anaconda), pandas, NumPy, Jupyter Notebook.
 
 ## Author
 
