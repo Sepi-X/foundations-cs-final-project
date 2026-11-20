@@ -42,8 +42,8 @@ Everything is in one notebook: [`foundations_cs_project.ipynb`](foundations_cs_p
    ```bash
    pip install pandas numpy jupyter
    ```
-2. Download the dataset `student_dropout_risk_2026.csv(.gz)` from the course website and put it in the project folder. The data file is **not** included in this repository.
-3. In the notebook, set the path in the `pd.read_csv(...)` cell to where your data file is.
+2. Download the dataset `student_dropout_risk_2026.csv.gz` from the course website and put it in the same folder as the notebook (no need to unzip it, pandas reads `.gz` files). The data file is **not** included in this repository.
+3. If your file has a different name or location, change the path in the first `pd.read_csv(...)` cell.
 4. Start Jupyter and run all cells:
    ```bash
    jupyter notebook foundations_cs_project.ipynb
